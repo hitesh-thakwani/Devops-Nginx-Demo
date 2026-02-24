@@ -11,3 +11,5 @@ sudo systemctl start nginx
 sudo systemctl enable nginx
 
 the webpage is at /var/www/nginx file
+
+this is updated file till now.
