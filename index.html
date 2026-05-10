@@ -1,4 +1,158 @@
-</h1> This is new webpage </h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DevOps Portfolio - Hitesh</title>
 
-</h2> This is created by Hitesh </h2>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #1d2671, #c33764);
+      overflow: hidden;
+    }
+
+    /* Animated Background Blobs */
+    body::before, body::after {
+      content: "";
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      filter: blur(120px);
+      animation: float 10s infinite alternate;
+    }
+
+    body::before {
+      top: -100px;
+      left: -100px;
+    }
+
+    body::after {
+      bottom: -100px;
+      right: -100px;
+      animation-delay: 3s;
+    }
+
+    @keyframes float {
+      from { transform: translateY(0px); }
+      to { transform: translateY(50px); }
+    }
+
+    /* Glass Card */
+    .glass-container {
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 40px;
+      width: 90%;
+      max-width: 700px;
+      text-align: center;
+      color: #fff;
+      border: 1px solid rgba(255,255,255,0.2);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    }
+
+    .glass-container h1 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+
+    .glass-container p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+      margin-bottom: 25px;
+    }
+
+    /* Adaptive Buttons */
+    .btn-group {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 12px 25px;
+      border-radius: 30px;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      color: #fff;
+      backdrop-filter: blur(10px);
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.3);
+    }
+
+    .btn:hover {
+      transform: translateY(-3px) scale(1.05);
+      background: rgba(255,255,255,0.25);
+      box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    }
+
+    /* Gradient Accent Text */
+    .highlight {
+      background: linear-gradient(90deg, #00dbde, #fc00ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Footer */
+    .footer {
+      margin-top: 25px;
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
+
+    /* Responsive */
+    @media(max-width: 500px) {
+      .glass-container {
+        padding: 25px;
+      }
+
+      .glass-container h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="glass-container">
+    <h1>Welcome to <span class="highlight">DevOps Portfolio</span></h1>
+    <p>by <strong>Hitesh</strong></p>
+
+    <p>
+      Building scalable, secure, and automated infrastructure using modern DevOps practices.
+      Explore CI/CD pipelines, Kubernetes, Cloud, and Infrastructure as Code.
+    </p>
+
+    <div class="btn-group">
+      <button class="btn">🚀 View Projects</button>
+      <button class="btn">📄 Resume</button>
+      <button class="btn">📬 Contact</button>
+    </div>
+
+    <div class="footer">
+      © 2026 Hitesh | DevOps Engineer
+    </div>
+  </div>
+
+</body>
+</html>
 
